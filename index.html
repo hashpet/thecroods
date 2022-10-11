@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="forntEnd-Developer" content="Mamunur Rashid">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Croods Metaverse world</title>
+	<!-- favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- Plugin css -->
+	<link rel="stylesheet" href="assets/css/plugin.css">
+
+	<!-- stylesheet -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.loli.net/css?family=Fjalla+One" rel="stylesheet">
+	<!-- responsive -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<style>
+		.rol {
+            width: 100%;
+            height: 100%;
+        }
+
+        .banner {
+            width: 100%;
+            height: 100%;
+            overflow-x: scroll;
+            white-space: nowrap;
+        }
+
+        .one {
+            position: relative;
+            width: 48%;
+            height: 88%;
+            margin-right: 1%;
+            display: inline-block;
+        }
+
+        .one img {
+            width: 100%;
+            height: 80%;
+        }
+
+        .text {
+            position: absolute;
+            font-size: 18px;
+            color: #FFF;
+            top: 83%;
+            left: 5%;
+            /* width: 55%;
+      white-space: pre-wrap; */
+        }
+
+        .zol {
+            width: 100%;
+            height: 27%;
+            position: absolute;
+            top: 37%;
+            left: 0;
+        }
+
+        .videos {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            width: 70%;
+            z-index: 100;
+            transform: translate(-50%, -50%);
+        }
+
+        .vclose {
+            position: absolute;
+            right: 1%;
+            top: 1%;
+            border-radius: 100%;
+            width: 25px !important;
+            height: 25px !important;
+        }
+		@media (min-width: 991px){
+			.ph1{
+				display: none;
+			}
+		}
+		@media (max-width: 991px){
+			.pc1{
+				display: none;
+			}
+			.header .mainmenu-area .navbar .navbar-brand img {
+    max-width: 120px;
+}
+
+.videos {
+            top: 40%;
+            width: 82%;
+        }
+		}
+
+		@media (max-width: 350px){
+			.header .mainmenu-area .navbar .navbar-brand img {
+    max-width: 90px;
+}
+		}
+
+		.selectBox {
+			width: 100px; 
+			height: 100px;
+			background-color: #fff;
+			position: absolute;
+			right: 0;
+			top: 55px;
+			border-radius: 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px 0;
+			box-sizing: border-box;
+			display: none;
+			z-index: 1000;
+		}
+		.selectBox img {
+			height: 20px;
+			position: absolute;
+			left: 55px;
+			top: -10px;
+			
+		}
+		.Security{
+			border-radius: 10px;
+			margin-top: 20px;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<!-- preloader area start -->
+	 
+	<!-- preloader area end -->
+
+	<!-- Header Area Start  -->
+	<header class="header">
+		<div class="overlay"></div>
+		<!--Main-Menu Area Start-->
+		<div class="mainmenu-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">                 
+						<nav class="navbar navbar-expand-lg navbar-light">
+							<a class="navbar-brand" href="index.html">
+								<img src="assets/images/logo.png" alt="">
+							</a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_menu" aria-controls="main_menu"
+								aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse fixed-height" id="main_menu">
+								<ul class="navbar-nav ml-auto">
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="index.html" data-locale="home">HOME</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="mint.html" data-locale="MINT">MINT</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="market.html" data-locale="MARKET">MARKET</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="adventure.html" data-locale="adventure">ADVENTURE</a>
+								</li>
+							</ul>
+							<a href="#" class="mybtn1"  data-toggle="modal" data-target="#signin">Connect</a>
+						</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Main-Menu Area Start-->
+	</header>
+	<!-- Header Area End  -->
+
+	<!-- Hero Area Start -->
+	<div class="hero-area">
+		<img class="shape parallax5" src="assets/images/home/h2-shape.png" alt="">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="content">
+						<div class="content">
+							<h5 class="subtitle">
+								The Croods Metaverse world
+							</h5>
+							<h1 class="title">
+								<img src="assets/images/text.pngs" alt="">
+							</h1>
+							<div class="links">
+								<a href="mint.html" class="mybtn1">Mint Now</a>
+								<a class="video_btn play-video mfp-iframe one"
+								vpath="./assets/video/maxresdefault.jpeg"
+								ipath="https://rr2---sn-a5meknde.googlevideo.com/videoplayback?expire=1665500980&ei=1DJFY6uOEYiQkgbOgaeIAw&ip=2001%3A470%3A1f04%3A726%3A%3A405&id=o-ABr2pNPMqgoIZrCzBrinRQFPqDgz3J_DMpRaRFqbYunN&itag=22&source=youtube&requiressl=yes&spc=yR2vpzJsL_tpxEQ0ukIinYawbNXWrXY&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=44.396&lmt=1661672348853521&fexp=24001373,24007246&c=ANDROID&txp=6211224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRgIhAMrPT50NCqFVZVSyRJfne5rDi5RFpr4BNTPZfq54MpopAiEAzgCKI088oVI6zYRKxjaUW_WsaFQIrhhkpjjJKtXnuOU%3D&redirect_counter=1&cm2rm=sn-5hnezz7z&req_id=af03ac8461a2a3ee&cms_redirect=yes&cmsv=e&mh=9k&mip=192.81.128.86&mm=34&mn=sn-a5meknde&ms=ltu&mt=1665479344&mv=m&mvi=2&pl=24&lsparams=mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIhAJm4uNQyN2Ss4raFBlkufhWxO7ETZFQlYEmei4kn0mblAiAfFYxR6_x73fPOdbN4QL0Wzuhz5PRqQWygGGKWFHzOIw%3D%3D" >
+									<i class="fas fa-play"></i>
+								</a>
+							</div>
+							<div class="videos"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Hero Area End -->
+
+	<!-- Counter Area Start -->
+	<section class="counter-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="counter-box">
+						<div class="myborder"></div>
+						<div class="image">
+							<img src="assets/images/counter/1.png" alt="">
+						</div>
+						<div class="content">
+							<h4>NFT</h4>
+							<h6 data-locale="income">Passive Income</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="counter-box">
+						<div class="myborder"></div>
+						<div class="image">
+							<img src="assets/images/counter/2.png" alt="">
+						</div>
+						<div class="content">
+							<h4 data-locale="liquidity">Liquidity</h4>
+							<h6 data-locale="liquidityM">Liquidity Mining</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="counter-box">
+						<div class="image">
+							<img src="assets/images/counter/3.png" alt="">
+						</div>
+						<div class="content">
+							<h4 data-locale="game">Game</h4>
+							<h6 data-locale="playEarn">Play to Earn</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Counter Area End -->
+
+	<!-- Game play area start -->
+	<section class="game-play-section">
+		<img class="left-img" src="assets/images/game-play/left-img.png" alt="">
+		<img class="right-img" src="assets/images/game-play/right-img.png" alt="">
+		<div class="container">
+			<div class="row ">
+				<div class="col-lg-12">
+					<div class="section-heading">
+						<h5 class="subtitle" data-locale="Genesis">
+							Genesis Egg NFT
+						</h5>
+						<h2 class="title" data-locale="mintNftNow">
+							MINT NFT NOW
+						</h2>
+						<h6 class="text" data-locale="CharacterNFTs">
+							Character NFTs with access to advanced attributes!
+						</h6>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<div class="single-play">
+						<div class="image">
+							<img src="assets/images/game-play/1.png" alt="">
+						</div>
+						<div class="contant">
+							<a href="mint.html" class="mybtn1" data-locale="primary">Primary</a>
+							<h4 data-locale="genesisMint">Genesis Mint</h4>
+							<ul>
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<div class="single-play">
+						<div class="image">
+							<img src="assets/images/game-play/2.png" alt="">
+						</div>
+						<div class="contant">
+							<a href="mint.html" class="mybtn1" data-locale="intermediate">Intermediate</a>
+							<h4 data-locale="genesisMint">Genesis Mint</h4>
+							<ul>
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<div class="single-play">
+						<div class="image">
+							<img src="assets/images/game-play/3.png" alt="">
+						</div>
+						<div class="contant">
+							<a href="mint.html" class="mybtn1" data-locale="advanced">Advanced</a>
+							<h4 data-locale="genesisMint">Genesis Mint</h4>
+							<ul>
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<div class="single-play">
+						<div class="image">
+							<img src="assets/images/game-play/4.png" alt="">
+						</div>
+						<div class="contant">
+							<a href="mint.html" class="mybtn1" data-locale="rare">Rare</a>
+							<h4 data-locale="genesisMint">Genesis Mint</h4>
+							<ul>
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<a href="mint.html" class="b-all-btn"> <span data-locale="goToMint">Go to MINT</span>  <img src="assets/images/arrow.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Game play area end -->
+
+	<!-- Latest arcive area start -->
+	<section class="latest-arcive">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="sh-wrpper">
+						<img src="assets/images/arcive/i1.png" alt="">
+						<div class="section-heading">
+							<h5 class="subtitle" data-locale="probability">
+								Probability
+							</h5>
+							<h2 class="title " data-locale="leaderboard">
+								Leaderboard
+							</h2>
+						</div>
+					</div>
+					<div class="l-arcive-box">
+						<div class="s-a-b">
+							<div class="left">
+								<img src="assets/images/arcive/sa1.png" alt="">
+								<h6 data-locale="ordinary">Ordinary</h6>
+							</div>
+							<div class="right">
+								<h6>$CRT</h6>
+								<img src="assets/images/arcive/100.png" alt="">
+							</div>
+						</div>
+						<div class="s-a-b">
+							<div class="left">
+								<img src="assets/images/arcive/sa2.png" alt="">
+								<h6 data-locale="advanced">Advanced</h6>
+							</div>
+							<div class="right">
+								<h6>$CRT</h6>
+								<img src="assets/images/arcive/100.png" alt="">
+							</div>
+						</div>
+						<div class="s-a-b">
+							<div class="left">
+								<img src="assets/images/arcive/sa3.png" alt="">
+								<h6 data-locale="rare">Rare</h6>
+							</div>
+							<div class="right">
+								<h6>$CRT</h6>
+								<img src="assets/images/arcive/100.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="sh-wrpper md-pt-50">
+						<img src="assets/images/arcive/i2.png" alt="">
+						<div class="section-heading">
+							<h5 class="subtitle" data-locale="liquidityYield">
+								Liquidity Yield
+							</h5>
+							<h2 class="title" data-locale="topPlayers">
+								Top Players
+							</h2>
+						</div>
+					</div>
+					<div class="l-arcive-box">
+						<div class="s-a-b">
+							<div class="left">
+								<img src="assets/images/arcive/sa4.png" alt="">
+								<h6 data-locale="harmon">Harmon</h6>
+							</div>
+							<div class="right">
+								<h6>APY</h6>
+								<img src="assets/images/arcive/mony.png" alt="">
+							</div>
+						</div>
+						<div class="s-a-b">
+							<div class="left">
+								<img src="assets/images/arcive/sa5.png" alt="">
+								<h6 data-locale="mendez">Mendez</h6>
+							</div>
+							<div class="right">
+								<h6>APY</h6>
+								<img src="assets/images/arcive/mony.png" alt="">
+							</div>
+						</div>
+						<div class="s-a-b">
+							<div class="left">
+								<img src="assets/images/arcive/sa6.png" alt="">
+								<h6 data-locale="munoz">Munoz</h6>
+							</div>
+							<div class="right">
+								<h6>APY</h6>
+								<img src="assets/images/arcive/mony.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Latest arcive area End -->
+
+	<!-- join us area start -->
+	<section class="join_us">
+		<img class="l-image" src="assets/images/joinus_left_img.png" alt="">
+		<div class="container">
+			<div class="row justify-content-end">
+				<div class="col-xl-7">
+					<div class="section-heading content-left">
+						<h5 class="subtitle" data-locale="everyday">
+							Lots of wins everyday
+						</h5>
+						<h2 class="title" data-locale="beOneOf">
+							Be One of Them ！
+						</h2>
+						<h6 class="text" data-locale="joinusto">
+							Join us to explore the unknown world of primitive tribes.
+						</h6>
+						<a href="https://t.me/Thecroods_io" class="mybtn1" data-locale="joinUs">Join US</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- join us area  end -->
+
+	<!-- How play area start -->
+    <section>
+		<div class="subscribe-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="subscribe-box">
+							<div class="row justify-content-center">
+								<div class="col-lg-12">
+									<div class="heading-area">
+											<h5 class="sub-title" data-locale="community-driven">
+												A community-driven metaverse world
+											</h5>
+											<h4 class="title" data-locale="basedBNBCHAIN">
+												Based on BNBCHAIN
+											</h4>
+											<a href="#" class="mybtn1"  data-toggle="modal" data-locale="BUYCRT">Contact US</a>	
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- How play area  end -->
+	
+	<!-- Footer Area Start -->
+	<footer class="footer" id="footer">
+	
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="flogo">
+						<a href="#"><img src="assets/images/footer-ogo.png" alt=""></a>
+					</div>
+					<div class="footer-menu">
+						<ul>
+							<li>
+								<a href="https://twitter.com/CroodsWorld">
+									<img src="assets/images/twitter.png" alt=""></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="assets/images/discord.png" alt=""></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="assets/images/book.png" alt=""></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copy-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+							<p>Copyright © 2022.All Rights Reserved</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer> 
+	<!-- Footer Area End -->
+
+	<!-- Back to Top Start -->
+	<div class="bottomtotop">
+		<i class="fas fa-chevron-right"></i>
+	</div>
+	<!-- Back to Top End -->
+
+
+	<!-- User Message Modal Start-->
+
+	<!-- User Message Modal End-->
+
+	<!-- User Notification Modal Start-->
+
+	<!-- User Notification Modal End-->
+	
+	<!-- SignIn Area Start -->
+
+	<!-- SignIn Area End -->
+
+	<!-- jquery -->
+	<script src="assets/js/jquery.js"></script>
+	<!-- popper -->
+	<script src="assets/js/popper.min.js"></script>
+	<!-- bootstrap -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- plugin js-->
+	<script src="assets/js/plugin.js"></script>
+
+	<!-- MpusemoverParallax JS-->
+	<script src="assets/js/TweenMax.js"></script>
+	<script src="assets/js/mousemoveparallax.js"></script>
+	<!-- main -->
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/my.js"></script>
+	<script src="assets/js/I18n/i18n.js"></script>
+	<script src="assets/js/lang.js"></script>
+</body>
+
+<script>
+
+
+		 var num1 = 0;
+			   var bool1 = true;
+			function qihuan(){
+				let selectBox = document.querySelector('.selectBox')
+				
+			   if(num1%2 == 0){
+				   bool1 = true;
+				   selectBox.style.display = 'flex'
+			   }else{
+				   bool1 =false;
+				   selectBox.style.display = 'none'
+			   }
+			   if(bool1){
+				//    chooseLang('cn')
+				   num1 = num1+1;
+			   }else{
+				//    chooseLang('en')
+				   num1 = num1+1;
+			   }
+			   
+			}
+			function clickYu(str){
+				let selectBox = document.querySelector('.selectBox')
+				if(str == "en"){
+					chooseLang('en')
+				}else{
+					chooseLang('cn')
+				}
+				selectBox.style.display = 'none'
+			}
+
+			document.addEventListener('mouseup', (e) => {
+        let divSearch = document.querySelector('.selectBox') //选择返回的第一个出现的元素
+        
+        if (divSearch) {
+          if (!divSearch.contains(event.target)) {
+            //判断某个元素不是目标元素的子元素 即目标元素以外的区域
+            var modal = document.querySelector(".selectBox");
+			if(modal.style.display == "flex"){
+			 num1 = num1+1;
+			}
+            modal.style.display = "none";
+			
+          }
+        }
+      })
+
+
+</script>
+<script>$('.one').each(function () { 
+	$(this).click(function () { 
+		var img = $(this).attr('vpath');
+		var video = $(this).attr('ipath');
+		$('.videos').html("<video id=\"video\" poster='" + img + "' style='width: 100%;' src='" + video + "' preload=\"auto\" controls=\"controls\" autoplay=\"autoplay\"></video><img onClick=\"close1()\" class=\"vclose\" src=\"http://sucai.suoluomei.cn/sucai_zs/images/20190816134237-%E5%85%B3%E9%97%AD%20%281%29.png\"/>");
+		$('.videos').show();
+	});
+});
+function close1() {
+	var v = document.getElementById('video');
+	$('.videos').css("display", "none");
+	v.pause();
+	$('.videos').html();
+}</script>
+</html>

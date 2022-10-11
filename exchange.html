@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="forntEnd-Developer" content="Mamunur Rashid">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Croods Metaverse world</title>
+	<!-- favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- Plugin css -->
+	<link rel="stylesheet" href="assets/css/plugin.css">
+
+	<!-- stylesheet -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- <link rel="stylesheet" href="/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link href="css/style.css" rel="stylesheet"> -->
+	<link href="https://fonts.loli.net/css?family=Fjalla+One" rel="stylesheet">
+	<!-- responsive -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<link rel="stylesheet" href="assets/css/loading.css">
+	<style>
+		@media (min-width: 991px){
+			.header .mainmenu-area .navbar .ph1{
+				display: none;
+			}
+		}
+		@media (max-width: 991px){
+			.header .mainmenu-area .navbar .pc1{
+				display: none;
+			}
+			.header .mainmenu-area .navbar .navbar-brand img {
+    max-width: 120px;
+}
+		}
+
+		@media (max-width: 380px){
+			.header .mainmenu-area .navbar .navbar-brand img {
+    max-width: 90px;
+}
+.header .mainmenu-area .navbar .user-info-menu-area .left-area .number{
+	padding: 0px 5px;
+}
+
+		}
+
+		.ex1{
+			text-align: center;
+			font-weight: 700;
+			color: white;
+		}
+		.ex2{
+			height: 90px;
+		}
+		.ex3{
+			width: 40%;text-align: center;
+			line-height: 90px;
+		}
+		.ex4{
+			display: flex;
+			height: 35px;
+			margin-bottom: 15px;
+		}
+		.ex5{
+			display: flex;
+			height: 45px;
+			justify-content: space-around;
+		}
+	
+		.buttonBorder{
+			border: 2px solid #2278d3;
+    border-radius: 7px;
+    margin-right: 5px;
+	width: 15%;
+		}
+		.buttonw{
+			color: white;
+    background: #23064e;
+    width: 35%;
+	box-shadow: inset 0px 0px 6px 4px #2278d3;
+		}
+		.ex6{
+			width: 55%;
+		}
+		.ex8{
+			border: 2px solid #2278d3;
+			border-radius: 10px;
+			padding: 30px;
+		}
+		.ex9{
+			text-align: center;
+			font-weight: 700;
+			color: red;
+			margin-top: 35px;
+		}
+		@media (max-width: 500px){
+		.ex1{
+			font-size: 14px;
+		}
+		.ex2{
+			height: 70px;
+		}
+		.ex3{
+			line-height: 70px;
+		}
+		.ex50{
+			display: none;
+		}
+		.ex80{
+			display: none;
+		}
+		.ex6{
+			width: 75%;
+		}
+		.ex7{
+			width: 25%;
+		}
+		.buttonw{
+			font-size: 14px;
+			width: 40%;
+		}
+		.ex8{
+			padding: 20px;
+		}
+		}
+
+
+		@media (max-width: 400px){
+		.ex1{
+			font-size: 12px;
+		}
+		.ex2{
+			height: 55px;
+		}
+		.ex3{
+			line-height: 55px;
+		}
+		.buttonw{
+			font-size: 14px;
+			width: 48%;
+		}
+		}
+		.selectBox {
+			width: 100px; 
+			height: 100px;
+			background-color: #fff;
+			position: absolute;
+			right: 0;
+			top: 55px;
+			border-radius: 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px 0;
+			box-sizing: border-box;
+			display: none;
+			z-index: 1000;
+		}
+		.selectBox img {
+			height: 20px;
+			position: absolute;
+			left: 55px;
+			top: -10px;
+			
+		}
+	</style>
+</head>
+
+<body>
+	<!-- preloader area start -->
+	 
+	<!-- preloader area end -->
+
+	<!-- Header Area Start  -->
+	<header class="header">
+		<div class="overlay"></div>
+		<!--Main-Menu Area Start-->
+		<div class="mainmenu-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">                 
+						<nav class="navbar navbar-expand-lg navbar-light">
+							<a class="navbar-brand" href="index.html">
+								<img src="assets/images/logo.png" alt="">
+							</a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_menu" aria-controls="main_menu"
+								aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse fixed-height" id="main_menu">
+								<ul class="navbar-nav ml-auto">
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="index.html" data-locale="home">HOME</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="mint.html" data-locale="market">MARKET</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="exchange.html" data-locale="exchange">EXCHANGE</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="account.html" data-locale="myAccount">MY ACCOUNT</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="inviter.html" data-locale="invite">INVITE</a>
+								</li>
+							</ul>
+								<div class="user-info-menu-area pc1" id="select-address1">
+									<div class="left-area">
+										<div class="number">
+										  <img src="assets/images/crypto/i1.png" alt="">	<p><span id="userBnb">0.00</span> <span>BNB</span></p>
+										</div>
+										<ul class="dp-links">
+											<li>
+												<a href="#"><img src="assets/images/crypto/i2.png" alt="">	<p><b id="userToken">0.00</b> <span>CRT</span></p></a>
+											</li>
+											<li>
+												<a href="#"><img src="assets/images/crypto/i3.png" alt="">	<p><b>0.00</b> <span>FOOD</span></p></a>
+											</li>
+										</ul>
+									</div>
+									<div class="right-area">
+										<div class="icon">
+											<img src="assets/images/menu-user.png" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="pc1"><img src="assets/img/wl.png" style="margin-left: 20px; height: 40px;" onclick="qihuan()"></div>
+								</div>
+								<div class="user-info-menu-area ph1" id="select-address">
+									<div class="left-area">
+										<div class="number">
+										  <img src="assets/images/crypto/i1.png" alt="">	<p><span id="userBnb1">0.00</span> <span>BNB</span></p>
+										</div>
+										<ul class="dp-links">
+											<li>
+												<a href="#"><img src="assets/images/crypto/i2.png" alt="">	<p><b id="userToken1">0.00</b> <span>CRT</span></p></a>
+											</li>
+											<li>
+												<a href="#"><img src="assets/images/crypto/i3.png" alt="">	<p><b>0.00</b> <span>FOOD</span></p></a>
+											</li>
+										</ul>
+									</div>
+									<div class="right-area">
+										<div class="icon">
+											<img src="assets/images/menu-user.png" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="ph1"><img src="assets/img/wl.png" style="height: 40px;" onclick="qihuan()"></div>
+							<div class="selectBox">
+								<img src="assets/img/sj.png">
+								<p onclick="clickYu('en')">English</p>
+								<p onclick="clickYu('cn')">中文简体</p>
+							</div>
+								</li>
+							</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Main-Menu Area Start-->
+	</header>
+	<!-- Header Area End  -->
+
+	<!-- Breadcrumb Area Start -->
+	 <section class="breadcrumb-area gamer-profile">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="bc-content">
+						<div class="left">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Breadcrumb Area End -->
+
+	<!-- Gamer Profile area Start -->
+	<section class="gamer-profile-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="gamer-profile-top-inner">
+						<div class="profile-photo">
+							<div class="img">
+								<img src="assets/images/gamer/gamer.png" alt="">
+							</div>
+							<div class="mybadge">
+								<img src="assets/images/gamer/badge.png" alt="">
+								<span id="vq1">V0</span>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Gamer Profile  area End -->
+
+	<!-- User Menu Area Start -->
+	<div class="usermenu-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="usermenu-inner">
+						<div class="left-area">
+							<ul>
+								<li>
+									<a href="#" data-locale="affiliate">Affiliate</a>
+								</li>
+							</ul>
+						</div>
+						<div class="right-area">
+							<a href="exchange.html" class="mybtn2 active"><i class="far fa-user-circle"></i><span data-locale="exchange1">Exchange</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> 
+	<!-- User Menu Area End -->
+
+	<!-- User Main Content Area Start -->
+	<section class="user-main-dashboard">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+					<main>
+						<div class="main-box affiliate-box">
+							<div class="header-area">
+								<h4 data-locale="exchangePool">Exchange Pool</h4>
+								<p data-locale="tokensCanBe">
+									Tokens can be directly exchanged into BNB!
+								</p>
+							</div>
+							<div style="display: flex;
+							justify-content: center; margin-bottom: 50px;">
+								<div class="ex8">
+									<div class="ex1" data-locale="CROODSTOKEN">CROODS TOKEN FOR BNB</div>
+									 <div style="display: flex;
+									text-align: center;margin: 15px 0px;">
+										<div style="width: 30%;"><img src="assets/images/expool/logo.png" alt="" class="ex2" > </div>
+										<div class="ex3" ><img src="assets/images/expool/line.png" alt=""></div>
+										<div  style="width: 30%;"><img src="assets/images/expool/BNB.png" alt="" class="ex2" ></div>
+									</div>
+									<div class="ex4">
+										<input class="buttonBorder ex6"  type="number" placeholder="Enter TRC Amount" id="input1" oninput="setValue()">
+										<button class="buttonBorder ex50" onclick="setInputValue('50')">50%</button>
+										<button class="buttonBorder ex80" onclick="setInputValue('80')">80%</button>
+										<button class="buttonBorder ex7" onclick="setInputValue('100')">MAX</button>
+									</div>
+								<div style="    display: flex;
+									height: 35px;
+									margin-bottom: 15px;"><input id="input2" type="number" placeholder="Receive The BNB" style="width: 100%;
+    border: 2px solid #2278d3;
+    border-radius: 7px;
+    margin-right: 5px;"></div>
+									<div class="ex5">
+										<button class="buttonBorder buttonw" onclick="approve()" data-locale="approve">APPROVE</button>
+										<button class="buttonBorder buttonw" onclick="exchangeNew()" data-locale="exchange">EXCHANGE</button>
+									</div> 
+									<div class="ex9"> <span data-locale="PS1">PS</span> : 1CRT = 0.0002BNB</div>
+								</div>
+							</div>
+						</div>
+					</main>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- User Main Content Area End -->
+
+
+	<div class="subscribe-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="subscribe-box">
+						<img class="left" src="assets/images/vr.png" alt="">
+						<img class="right" src="assets/images/game controler_.png" alt="">
+						<div class="row justify-content-center">
+							<div class="col-lg-12">
+								<div class="heading-area">
+										<h5 class="sub-title" data-locale="community-driven">
+											A community-driven metaverse virtual world
+										</h5>
+										<h4 class="title" data-locale="basedBNBCHAIN">
+											Based on BNBCHAIN
+										</h4>
+										<a href="#" class="mybtn1"  data-toggle="modal" data-locale="BUYCRT">BUY $CRT</a>	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- How play area  end -->
+
+<!-- Footer Area Start -->
+<footer class="footer" id="footer">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="flogo">
+					<a href="#"><img src="assets/images/footer-ogo.png" alt=""></a>
+				</div>
+				<div class="social-links">
+					<ul>
+						<li>
+							<a href="https://twitter.com/CroodsWorld">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://t.me/Thecroods_io">
+								<i class="fab fa-telegram"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-menu">
+					<ul>
+						<li>
+							<a href="https://pancakeswap.finance/">
+								PancakeSwap
+							</a>
+						</li>
+						<li>
+							<a href="https://dexscreener.com/watchlist">
+								Dexscreener
+							</a>
+						</li>
+						<li>
+							<a href="https://www.pinksale.finance/">
+								PinkSale
+							</a>
+						</li>
+						<li>
+							<a href="https://tofunft.com/">
+								tofuNFT
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copy-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+						<p>Copyright © 2021.All Rights Reserved By Thecroods</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer> 
+<!-- Footer Area End -->
+
+<!-- Back to Top Start -->
+<div class="bottomtotop">
+	<i class="fas fa-chevron-right"></i>
+</div>
+<!-- Back to Top End -->
+
+
+<!-- User Message Modal Start-->
+
+<!-- User Message Modal End-->
+
+<!-- User Notification Modal Start-->
+
+<!-- User Notification Modal End-->
+
+<!-- SignIn Area Start -->
+
+<!-- SignIn Area End -->
+
+<!-- jquery -->
+<script src="assets/js/jquery.js"></script>
+<!-- popper -->
+<script src="assets/js/popper.min.js"></script>
+<!-- bootstrap -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- plugin js-->
+<script src="assets/js/plugin.js"></script>
+
+<!-- MpusemoverParallax JS-->
+<script src="assets/js/TweenMax.js"></script>
+<script src="assets/js/mousemoveparallax.js"></script>
+<!-- main -->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/my.js"></script>
+<script src="assets/js/I18n/i18n.js"></script>
+	<script src="assets/js/lang.js"></script>
+</body>
+<script>
+var num1 = 0;
+			   var bool1 = true;
+			function qihuan(){
+				let selectBox = document.querySelector('.selectBox')
+				
+			   if(num1%2 == 0){
+				   bool1 = true;
+				   selectBox.style.display = 'flex'
+			   }else{
+				   bool1 =false;
+				   selectBox.style.display = 'none'
+			   }
+			   if(bool1){
+				//    chooseLang('cn')
+				   num1 = num1+1;
+			   }else{
+				//    chooseLang('en')
+				   num1 = num1+1;
+			   }
+			   
+			}
+			function clickYu(str){
+				let selectBox = document.querySelector('.selectBox')
+				if(str == "en"){
+					chooseLang('en')
+				}else{
+					chooseLang('cn')
+				}
+				selectBox.style.display = 'none'
+			}
+
+			document.addEventListener('mouseup', (e) => {
+        let divSearch = document.querySelector('.selectBox') //选择返回的第一个出现的元素
+        
+        if (divSearch) {
+          if (!divSearch.contains(event.target)) {
+            //判断某个元素不是目标元素的子元素 即目标元素以外的区域
+            var modal = document.querySelector(".selectBox");
+			if(modal.style.display == "flex"){
+			 num1 = num1+1;
+			}
+            modal.style.display = "none";
+			
+          }
+        }
+      })
+
+
+	var a80 = 0;
+	var a50 = 0;
+	var a100 = 0;
+	var inputValue = 0;
+	window.onload = async function (){
+		var isPc = true;
+	if($('#'+"select-address").css("display") == "none"){
+		await initWallet("select-address1",false)
+		var currentProvider = new Web3.providers.HttpProvider('https://bsc-dataseed1.binance.org');
+		// https://kovan.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161
+		//https://bsc-dataseed1.binance.org
+		let web3Provider = new ethers.providers.Web3Provider(currentProvider);
+		var bnbAmount = await web3Provider.getBalance(privateAddress);
+		var userBnb = $('#userBnb');
+		var num = (bnbAmount.div(ethers.utils.bigNumberify("10000000000000000")).toNumber() / 100).toFixed(2);
+		userBnb[0].innerHTML = num;
+		isPc = true;
+	}else{
+		await initWallet("select-address",false)
+		var currentProvider = new Web3.providers.HttpProvider('https://bsc-dataseed1.binance.org');
+		// https://kovan.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161
+		//https://bsc-dataseed1.binance.org
+		let web3Provider = new ethers.providers.Web3Provider(currentProvider);
+		var bnbAmount = await web3Provider.getBalance(privateAddress);
+		var userBnb = $('#userBnb1');
+		var num = (bnbAmount.div(ethers.utils.bigNumberify("10000000000000000")).toNumber() / 100).toFixed(2);
+		userBnb[0].innerHTML = num;
+		isPc = false;
+	} 
+
+	var mulAbi = [
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "name": "getAmountBNB",
+            "outputs": [],
+            "stateMutability": "payable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getBNB",
+            "outputs": [],
+            "stateMutability": "payable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "nft",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_thecroodsIdo",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "stateMutability": "payable",
+            "type": "receive"
+        },
+        {
+            "inputs": [],
+            "name": "dev_address",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "adr",
+                    "type": "address"
+                }
+            ],
+            "name": "getUserInfoIdo",
+            "outputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "",
+                    "type": "uint256[]"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "adr",
+                    "type": "address"
+                }
+            ],
+            "name": "getUserInfoInvter",
+            "outputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "",
+                    "type": "uint256[]"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "address",
+                            "name": "userAdr",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "userLevel",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "userManyList",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "userRewardList",
+                            "type": "uint256"
+                        }
+                    ],
+                    "internalType": "struct ThecroodsIdoMuticall.oneUserRecord[]",
+                    "name": "",
+                    "type": "tuple[]"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "Nft",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "thecroodsIdo",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "Token",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ]
+
+     let contract1 = new ethers.Contract("0xB7154045b1610AeB68771a643dd4d0f48DE84B97", mulAbi, walletWithProvider);
+	 var list = await contract1.getUserInfoInvter(privateAddress);
+		if(isPc){
+		var userToken = $('#userToken');
+		var numss = (list[0][5].div(ethers.utils.bigNumberify("10000000")).toNumber() / 100).toFixed(2);
+		console.log(numss +"1");
+		userToken[0].innerHTML = numss;
+	}else{
+		var userToken = $('#userToken1');
+		var numss = (list[0][5].div(ethers.utils.bigNumberify("10000000")).toNumber() / 100).toFixed(2);
+		console.log(numss +"2");
+		userToken[0].innerHTML = numss;
+	}
+	$("#vq1")[0].innerHTML = "V"+list[0][4].toString();
+
+   a50 = (list[0][5].div(ethers.utils.bigNumberify("10000000")).toNumber() / 200).toFixed(2);
+   a80 = (list[0][5].div(ethers.utils.bigNumberify("10000000")).toNumber() / 125).toFixed(2);
+   a100 =  (list[0][5].div(ethers.utils.bigNumberify("10000000")).toNumber() / 100).toFixed(2);
+ }
+
+ function setInputValue(str) {
+	var amount1 = 0;
+	if(str == "50"){
+			amount1 = a50;
+	}else if(str == "80"){
+			amount1 = a80;
+	}else if(str == "100"){
+			amount1 = a100;
+	}
+	var inputPrivatekeyNew = $('#input1');
+       inputPrivatekeyNew[0].value = amount1;
+	   var inputPrivatekeyNew2 = $('#input2');
+       inputPrivatekeyNew2[0].value = (amount1*0.0002).toFixed(4);
+ }
+
+  function setValue(){
+
+	inputValue =$('#input1').val();
+	var inputPrivatekeyNew2 = $('#input2');
+       inputPrivatekeyNew2[0].value = (inputValue*0.0002).toFixed(4);
+ }
+ async function exchangeNew(){
+ await exchange(inputValue);
+ }
+</script>
+
+</html>
