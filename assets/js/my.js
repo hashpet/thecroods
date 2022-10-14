@@ -1203,7 +1203,7 @@ async function initWallet(str,bools) {
     } else if (window.web3) {   
         web3Provider = window.web3.currentProvider;
     } else {
-        alert("！")
+        // alert("！")
         web3Provider = new Web3.providers.HttpProvider('http://localhost:8545');
     }
     web3 = new Web3(web3Provider);
